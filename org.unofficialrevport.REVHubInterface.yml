@@ -47,8 +47,8 @@ modules:
           - /man
         sources:
           - type: archive
-            url: https://prdownloads.sourceforge.net/tcl/tk8.6.14-src.tar.gz
-            sha256: 8ffdb720f47a6ca6107eac2dd877e30b0ef7fac14f3a84ebbd0b3612cee41a94
+            url: https://prdownloads.sourceforge.net/tcl/tk8.6.15-src.tar.gz
+            sha256: 550969f35379f952b3020f3ab7b9dd5bfd11c1ef7c9b7c6a75f5c49aca793fec
             x-checker-data:
               type: anitya
               project-id: 11426
@@ -58,7 +58,8 @@ modules:
     buildsystem: simple
     build-commands:
       - python -m setuptools_scm --force-write-version-files
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} . --no-build-isolation
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+        --prefix=${FLATPAK_DEST} . --no-build-isolation
       - install -Dm755 REVHubInterface.sh /app/bin/REVHubInterface.sh
       - install -Dm644 -t /app/share/applications flatpak/org.unofficialrevport.REVHubInterface.desktop
       - install -Dm644 -t /app/share/icons/hicolor/scalable/apps org.unofficialrevport.REVHubInterface.svg
@@ -69,4 +70,4 @@ modules:
         commit: fd0f24656789efa8533d30929de25deef7c14bc0
         disable-shallow-clone: true
 
-        
+
