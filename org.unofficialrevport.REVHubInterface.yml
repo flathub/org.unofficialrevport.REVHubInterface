@@ -66,7 +66,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/unofficial-rev-port/REVHubInterface.git
-        commit: fd0f24656789efa8533d30929de25deef7c14bc0
+        commit: ff2966db90efe3f6e46e748f0cdf0680dacb66f8
         disable-shallow-clone: true
 
         
