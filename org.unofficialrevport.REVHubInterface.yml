@@ -31,7 +31,7 @@ modules:
             x-checker-data:
               type: html
               url: https://sourceforge.net/projects/tcl/rss
-              pattern: <link>(https://sourceforge.net/.+/tcl(8\\.6\\.[\\d\\.]*\\d)-src.tar.gz)/download
+              pattern: '<link>(https://sourceforge.net/.+/tcl(9\.0\.\d+)-src\.tar\.gz)/download'
       - name: tk9.0
         subdir: unix
         config-opts:
@@ -45,7 +45,7 @@ modules:
             x-checker-data:
               type: html
               url: https://sourceforge.net/projects/tcl/rss
-              pattern: <link>(https://sourceforge.net/.+/tk(8\\.6\\.[\\d\\.]*\\d)-src.tar.gz)/download
+              pattern: '<link>(https://sourceforge.net/.+/tk(9\.0\.\d+)-src\.tar\.gz)/download'
   - name: revhubinterface
     buildsystem: simple
     build-commands:
