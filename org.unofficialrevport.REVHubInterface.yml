@@ -20,6 +20,11 @@ modules:
     modules:
       - name: tcl9.0
         subdir: unix
+        build-options:
+          no-debuginfo: true
+          env:
+            TCLSH_NATIVE: /run/build/tcl/unix/tclsh
+            LD_LIBRARY_PATH: /run/build/tcl/unix
         config-opts:
           - --disable-zipfs
         post-install:
