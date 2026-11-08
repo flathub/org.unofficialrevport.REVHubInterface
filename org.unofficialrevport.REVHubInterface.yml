@@ -26,8 +26,8 @@ modules:
           - chmod +w ${FLATPAK_DEST}/lib/libtcl9.0.so
         sources:
           - type: archive
-            url: https://prdownloads.sourceforge.net/tcl/tcl9.0.2-src.tar.gz
-            sha256: e074c6a8d9ba2cddf914ba97b6677a552d7a52a3ca102924389a05ccb249b520
+            url: https://sourceforge.net/projects/tcl/files/Tcl/9.0.4/tcl9.0.4-src.tar.gz
+            sha256: d0aed49230bc02a65c1e0229e65f34590a4b037ec40d546f32573b467f7551ea
             x-checker-data:
               type: html
               url: https://sourceforge.net/projects/tcl/rss
@@ -40,8 +40,8 @@ modules:
           - chmod +w ${FLATPAK_DEST}/lib/libtcl9tk9.0.so
         sources:
           - type: archive
-            url: https://prdownloads.sourceforge.net/tcl/tk9.0.2-src.tar.gz
-            sha256: 76fb852b2f167592fe8b41aa6549ce4e486dbf3b259a269646600e3894517c76
+            url: https://sourceforge.net/projects/tcl/files/Tcl/9.0.4/tk9.0.4-src.tar.gz
+            sha256: d7a146d2917eb8b5cc95276dbf0e3d03c7464d2b19c1675357857c989301dbb4
             x-checker-data:
               type: html
               url: https://sourceforge.net/projects/tcl/rss
